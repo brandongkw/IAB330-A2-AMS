@@ -1,0 +1,11 @@
+# Raspberry Pi Edge (HAR Project)
+
+## Modes
+- `MODE=MOCK` – no Arduinos needed. Generates IMU-like data with `mock_stream.py`.
+- `MODE=BLE`  – connects to two Nano 33 IoT devices (wrist + ankle). Fill UUIDs/names in `ble_receiver.py`.
+
+## Setup
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
